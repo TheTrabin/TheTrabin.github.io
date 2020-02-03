@@ -42,7 +42,7 @@
 			</div>
 
 			<section>
-				<div>
+				<div id="photoG">
 				 <center><h2>Photography</h2> 
 				 	<img class="photo" src="images/DCFC0005.JPG" width="600px">
 				 	<img class="photo" src="images/DCFC0046.jpg" width="600px">
@@ -57,32 +57,32 @@
 					<img class="photo" src="images/snail.jpg" width="600px">
 					<img class="photo" src="images/wha_0002.JPG" width="600px">
 
-					<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-					<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button></center>
+					<button class="w3-button w3-display-left" onclick="plusDivs(-1, photoG)">&#10094;</button>
+					<button class="w3-button w3-display-right" onclick="plusDivs(+1, photoG)">&#10095;</button></center>
 				</div>
 <script>
-	var photoIndex = 1;
-	showDivs(photoIndex);
+	var slideIndex = 1;
+	showDivs(slideIndex);
 	
 	function plusDivs(n) {
-	  showDivs(photoIndex += n);
+	  showDivs(slideIndex += n, photoG);
 	}
 	
 	function showDivs(n) {
 	  var i;
-	  var ph = document.getElementsByClassName("photo");
-	  if (n > ph.length) {photoIndex = 1}
-	  if (n < 1) {photoIndex = ph.length}
+	  var x = document.getElementsByClassName("photo");
+	  if (n > x.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = x.length}
 	  for (i = 0; i < x.length; i++) {
-		ph[i].style.display = "none";  
+		x[i].style.display = "none";  
 	  }
-	  ph[photoIndex-1].style.display = "block";  
+	  x[slideIndex-1].style.display = "block";  
 	}
 	</script>
 	
 			</section>
 			<section>
-				<div>
+				<div id="artG">
 			<center><h2>Art</h2>
 				
 				<img class="art" src="images/bggreen.jpg" width="600px">
@@ -96,25 +96,25 @@
 				<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 
 			</center></div>
-	<script>
-	var slideIndex = 1;
-	showDivs(slideIndex);
+				<script>
+					var slideIndex = 1;
+					showDivs(slideIndex, artG);
 					
-	function plusDivs(n) {
-	 showDivs(slideIndex += n);
-	}
+					function plusDivs(n) {
+					  showDivs(slideIndex += n);
+					}
 					
-	function showDivs(n) {
-		var i;
-		var rt = document.getElementsByClassName("art");
-		if (n > rt.length) {slideIndex = 1}
-		if (n < 1) {slideIndex = rt.length}
-		for (i = 0; i < x.length; i++) {
-		rt[i].style.display = "none";  
-		  }
-		 rt[slideIndex-1].style.display = "block";  
-		}
-		</script>
+					function showDivs(n) {
+					  var i;
+					  var x = document.getElementsByClassName("art");
+					  if (n > x.length) {slideIndex = 1}
+					  if (n < 1) {slideIndex = x.length}
+					  for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					  }
+					  x[slideIndex-1].style.display = "block";  
+					}
+					</script>
 			
 		</section>
 		<!-- Footer -->
