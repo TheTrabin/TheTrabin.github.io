@@ -71,7 +71,7 @@
 	function showDivs(n) {
 	  var i;
 	  var p = document.getElementsByClassName("photo");
-	  if (n > x.length) {slideIndex = 1}
+	  if (n > p.length) {slideIndex = 1}
 	  if (n < 1) {slideIndex = p.length}
 	  for (i = 0; i < x.length; i++) {
 		p[i].style.display = "none";  
@@ -107,7 +107,7 @@
 					function showDivs(n) {
 					  var i;
 					  var t = document.getElementsByClassName("art");
-					  if (n > x.length) {slideIndex = 1}
+					  if (n > t.length) {slideIndex = 1}
 					  if (n < 1) {slideIndex = t.length}
 					  for (i = 0; i < x.length; i++) {
 						t[i].style.display = "none";  
