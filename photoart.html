@@ -44,8 +44,8 @@
 			<section>
 				<div>
 				 <center><h2>Photography</h2> 
-				 	<img class="photo" src="images/DCFC0005.JPG">
-				 	<img class="photo" src="images/DCFC0046.jpg">
+				 	<img class="photo" src="images/DCFC0005.JPG" width="600px">
+				 	<img class="photo" src="images/DCFC0046.jpg" width="600px">
 					<img class="photo" src="images/hopper.jpg" width="600px">
 					<img class="photo" src="images/Kitteh.png" width="600px">  
 					<img class="photo" src="images/Kalisleep.jpg" width="600px">  
@@ -70,13 +70,13 @@
 	
 	function showDivs(n) {
 	  var i;
-	  var x = document.getElementsByClassName("photo");
+	  var p = document.getElementsByClassName("photo");
 	  if (n > x.length) {slideIndex = 1}
-	  if (n < 1) {slideIndex = x.length}
+	  if (n < 1) {slideIndex = p.length}
 	  for (i = 0; i < x.length; i++) {
-		x[i].style.display = "none";  
+		p[i].style.display = "none";  
 	  }
-	  x[slideIndex-1].style.display = "block";  
+	  p[slideIndex-1].style.display = "block";  
 	}
 	</script>
 	
@@ -106,13 +106,13 @@
 					
 					function showDivs(n) {
 					  var i;
-					  var x = document.getElementsByClassName("art");
+					  var t = document.getElementsByClassName("art");
 					  if (n > x.length) {slideIndex = 1}
-					  if (n < 1) {slideIndex = x.length}
+					  if (n < 1) {slideIndex = t.length}
 					  for (i = 0; i < x.length; i++) {
-						x[i].style.display = "none";  
+						t[i].style.display = "none";  
 					  }
-					  x[slideIndex-1].style.display = "block";  
+					  t[slideIndex-1].style.display = "block";  
 					}
 					</script>
 			
