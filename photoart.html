@@ -92,19 +92,19 @@
 				<img class="art" src="images/moonrose.JPG" width="600px">
 				<img class="art" src="images/twist2.JPG" width="600px">
 				<img class="art" src="images/Twisted.JPG" width="600px">
-				<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-				<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+				<button class="w3-button w3-display-left" onclick="artDivs(-1, artG)">&#10094;</button>
+				<button class="w3-button w3-display-right" onclick="artDivs(+1, artG)">&#10095;</button>
 
 			</center></div>
 				<script>
 					var slideIndex = 1;
-					showDivs(slideIndex, artG);
+					artDivs(slideIndex, artG);
 					
-					function plusDivs(n) {
-					  showDivs(slideIndex += n);
+					function artDivs(n) {
+					  artgDivs(slideIndex += n);
 					}
 					
-					function showDivs(n) {
+					function artgDivs(n) {
 					  var i;
 					  var x = document.getElementsByClassName("art");
 					  if (n > x.length) {slideIndex = 1}
